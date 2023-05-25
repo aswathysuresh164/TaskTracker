@@ -1,0 +1,47 @@
+<div class="header">
+  <div class="header-left">
+    <!-- <h1>TaskTracker</h1> -->
+  </div>
+  <div class="header-right" *ngIf="AddVisible">
+    <button class="view-tasks-button" (click)="AddTasks()">Add Tasks</button>
+  </div>
+</div>
+
+<body>
+  <div class="task-container">
+    <div class="task-list">
+      <!-- Iterate over tasks fetched from the backend API -->
+      <div *ngFor="let task of tasks" class="task-card">
+        <div class="task-header">
+          <h3>{{ task.task }}</h3>
+        </div>
+        <div class="task-info">
+          <ng-container *ngIf="!task.isEditing">
+            <p>Due Date: {{ task.dueDate | date }}</p>
+            <p>Priority: {{ task.priority }}</p>
+            <p>Status: {{ task.status }}</p>
+          </ng-container>
+          <ng-container *ngIf="task.isEditing">
+           <p>Due Date&nbsp;:&nbsp;<input type="date" [(ngModel)]="task.dueDate"  class="mat-input"></p> 
+         
+       
+          
+           <p> Priority&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;<input type="text" [(ngModel)]="task.priority" class="mat-input"></p> 
+           <p> Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;<input type="text" [(ngModel)]="task.status" class="mat-input"></p> 
+          </ng-container>
+        </div>
+        <div class="task-actions">
+          <button mat-icon-button color="primary" *ngIf="!task.isEditing" (click)="editTask(task)">
+            <mat-icon>edit</mat-icon>
+          </button>
+          <button mat-icon-button color="warn" *ngIf="!task.isEditing" (click)="deleteTask(task.id)">
+            <mat-icon>delete</mat-icon>
+          </button>
+          <button mat-icon-button color="primary" *ngIf="task.isEditing" (click)="saveTask(task)">
+            <mat-icon>check</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

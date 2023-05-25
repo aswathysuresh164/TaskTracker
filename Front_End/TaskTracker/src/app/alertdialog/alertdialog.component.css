@@ -1,0 +1,33 @@
+
+
+  .alert-dialog-button {
+    color: rgb(255, 255, 255);
+    border: none;
+    box-shadow: #a98ff3;
+    border-radius: 4px;
+    width: 75px;
+    height: 35px;
+    margin: 0 auto;
+    background-color: #a98ff3; 
+  }
+  .content{
+    align-items: center;
+    text-align: center;
+  }
+  
+  
+  .alert-dialog-content {
+    width: 600px; 
+
+    height: 300px;
+    height: auto;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .alert-dialog-actions {
+    display: flex;
+    color: aliceblue;
+    justify-content: center;
+  }
+  

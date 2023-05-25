@@ -1,0 +1,77 @@
+<!-- app.component.html -->
+
+
+<div class="header">
+    <div class="header-left">
+      <!-- <h1>TaskTracker</h1> -->
+    </div>
+    <div class="header-right">
+      <button class="view-tasks-button" (click)="showTasks()">View Tasks</button>
+    </div>
+  </div>
+
+<body>
+ 
+ 
+
+<!-- <div class="container"> -->
+    
+<br>
+    <div class="card shadow p-2 mb-5 bg-white rounded">
+        
+        
+      <div class="card-body"><br>
+        <h5 class="card-title">TaskTracker</h5><br>
+        <hr class="card-divider"> 
+       <br>
+        <!-- <p  *ngIf="btnvisible" class="card-text">Stay organized and boost your productivity with TaskTracker</p>
+        <button class="get-started-button" *ngIf="btnvisible" (click)="showTaskCreation()">Get Started</button> -->
+        <!-- <div *ngIf="taskCreationVisible"> -->
+         
+            
+        
+            
+           
+
+
+
+ <form [formGroup]="todoForm"  class="mat-form">
+   <div class="mat-form-field">
+    <label>Task</label>
+     <input type="text" formControlName="task" placeholder="Enter a new task" class="mat-input" [required]="true" >
+     <div *ngIf="todoForm.get('task')?.invalid && (todoForm.get('task')?.dirty || todoForm.get('task')?.touched)">
+        <div *ngIf="todoForm.get('task')?.errors?.['required']" class="error-message">Task is required</div>
+      </div>
+      
+      
+   </div>
+ 
+   <div class="mat-form-field">
+    <label>Due Date </label>
+     <input type="date" formControlName="dueDate" placeholder="Due Date" class="mat-input">
+   </div>
+ 
+   <div class="mat-form-field">
+    <label>Priority</label>
+     <select formControlName="priority" class="mat-select">
+       <option value="" disabled selected>Select Priority</option>
+       <option value="low">Low</option>
+       <option value="medium">Medium</option>
+       <option value="high">High</option>
+     </select>
+   </div>
+ 
+   
+ <br>
+   <button type="submit" (click)="onSubmit()" class="get-started-button align-right">Add Task</button>
+ </form>
+ 
+        </div>
+      </div>
+
+    <!-- </div> -->
+  <!-- </div> -->
+</body>
+  
+  
+  

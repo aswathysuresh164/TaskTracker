@@ -1,0 +1,124 @@
+.task-container {
+    height: 100vh;
+    overflow-y: auto;
+    background: linear-gradient(to bottom right, #e1d8f9, #c0b2ed);
+    background: linear-gradient(to bottom, #ffffff, #e6e6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+  }
+  
+  .task-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .task-card {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 500px;
+    height: fit-content;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+  }
+  
+  .task-header {
+    background: linear-gradient(to bottom right, #e1d8f9, #c0b2ed);
+    border-radius: 10px 10px 0 0;
+    padding: 8px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: auto;
+  }
+  
+  .task-info {
+    margin-bottom: 16px;
+    margin-top: 16px;
+    margin-left: 10px;
+  }
+  
+  .task-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .task-actions button {
+    margin-left: 8px;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-left h1 {
+    font-size: 24px;
+    color: #333333;
+    margin: 0;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .view-tasks-button {
+    background-color: #a98ff3;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Hide Scrollbar */
+  .task-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .header-left {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  
+    .header-right {
+      justify-content: center;
+    }
+  }
+  ::ng-deep .mat-input {
+
+    display: inline-block;
+  width: 200px; /* Set the desired width */
+  height: 25px;
+    border: none;
+    border-bottom: 1px solid #cfccd2;
+    color: #323233;
+    font-size: 16px;
+    border-width: 1px;
+    box-shadow: none;
+    transition: box-shadow 0.3s;
+  }
+  
+  ::ng-deep .mat-input:focus {
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  
