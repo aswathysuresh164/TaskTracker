@@ -1,9 +1,11 @@
 # TaskTracker
 TaskTracker is a Task managing app. Were the user can add, view update and delete the tasks.
 
-![image](https://github.com/aswathysuresh164/TaskTracker/assets/73010370/65e624ce-3156-4f13-a0c1-1abb2148867b)
-![image](https://github.com/aswathysuresh164/TaskTracker/assets/73010370/f74fb5eb-e353-45f7-b067-7fed856770da)
-![image](https://github.com/aswathysuresh164/TaskTracker/assets/73010370/061da35f-cfb2-49c5-bdb7-637075bb5eda)
-![image](https://github.com/aswathysuresh164/TaskTracker/assets/73010370/ae50865f-ddce-4617-a582-89ad8c7fd64e)
 
 
+<img width="873" alt="image1" src="https://github.com/user-attachments/assets/27aab82b-06b1-4a66-8f4a-08473969d0e7">
+
+<img width="856" alt="image2" src="https://github.com/user-attachments/assets/743adfc4-7cfc-4582-a488-7015be21231d">
+<img width="890" alt="image4" src="https://github.com/user-attachments/assets/5f1c71d3-c088-41f3-ba2c-26996bee8b00">
+<img width="910" alt="image3" src="https://github.com/user-attachments/assets/27490d7e-0c81-4c76-b9f2-89b690b6284f">
+<img width="931" alt="image5" src="https://github.com/user-attachments/assets/890bb8a3-2b93-47d6-a053-fbab4707b928">
